@@ -72,8 +72,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 :root {
-	--color-primary: #6a1126;
-	--color-primary-07: rgba(46, 39, 157, 0.07);
+	/* --color-primary: #992123;
+	--color-primary-07: rgba(157, 39, 61, 0.07);
 	--color-primary-10: rgba(46, 39, 157, 0.1);
 	--color-primary-20: rgba(46, 39, 157, 0.2);
 	--color-secondary: #499afa;
@@ -83,7 +83,22 @@
 	--color-heading: #0e204d;
 	--color-heading-07: rgba(14, 32, 77, 0.07);
 	--color-heading-10: rgba(14, 32, 77, 0.1);
-	--color-heading-50: rgba(14, 32, 77, 0.5);
+	--color-heading-50: rgba(14, 32, 77, 0.5); */
+	--color-primary: #992123; /* Brand primary color */
+--color-primary-07: rgba(153, 33, 35, 0.07);
+--color-primary-10: rgba(153, 33, 35, 0.1);
+--color-primary-20: rgba(153, 33, 35, 0.2);
+
+--color-secondary: #712225; /* Secondary brand color */
+--color-secondary-10: rgba(113, 34, 37, 0.1);
+
+--color-tertiary: #b33d47; /* Harmonizing with primary and secondary */
+--color-fourth: #501b1f; /* Darker, complementary tone */
+--color-heading: #3d0f14; /* Muted heading color for contrast */
+--color-heading-07: rgba(61, 15, 20, 0.07);
+--color-heading-10: rgba(61, 15, 20, 0.1);
+--color-heading-50: rgba(61, 15, 20, 0.5);
+
 	--color-body: #4d6581;
 	--color-grey: #f3f5f8;
 	--color-white: #fff;
@@ -3949,12 +3964,13 @@ button {
 }
 
 .appointment-form-two input,
+.appointment-form-two textarea,
 .appointment-form-two .nice-select {
 	background-color: var(--color-white);
 	border-radius: 35px;
 	font-family: var(--font-lora);
 	font-size: 18px;
-	font-weight: 600;
+	/* font-weight: 600; */
 	color: var(--color-heading);
 }
 
@@ -6427,6 +6443,7 @@ button {
 	position: absolute;
 	left: 0;
 	top: 0;
+
 	width: 100%;
 	height: 100%;
 	z-index: 2;
@@ -6434,8 +6451,9 @@ button {
 	-webkit-transition: 0.3s;
 	-o-transition: 0.3s;
 	transition: 0.3s;
-	visibility: visible;
 	opacity: 0;
+	visibility: visible;
+	
 }
 
 .gallery-item-two .gallery-thumbnail img {
@@ -6498,7 +6516,7 @@ button {
 }
 
 .gallery-item-two:hover .gallery-thumbnail::before {
-	opacity: 0.8;
+	opacity: 0.4;
 	visibility: visible;
 }
 

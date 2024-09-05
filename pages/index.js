@@ -4,6 +4,9 @@ import React from "react";
 import Slider from "react-slick";
 import Layouts from "../src/layouts/Layouts";
 import { testimonialOne } from "../src/sliderProps";
+import AboutUs from "../src/components/AboutUs";
+import WhyUs from "../src/components/WhyUs";
+import Appointment from "../src/components/Appointment";
 
 const Counter = dynamic(() => import("../src/components/Counter"), {
   ssr: false,
@@ -20,11 +23,11 @@ const Index = () => {
               <div className="col-lg-5 col-md-8">
                 <div className="hero-content">
                   <h1 className="title wow fadeInDown" data-wow-delay="0.3s">
-                    We Care Medical &amp; Health
+                    ENT &amp; Rhinoplasty Hub
                   </h1>
                   <p className="wow fadeInLeft" data-wow-delay="0.4s">
-                    Dolor sit amet consectetur adipiscing elitsedes eiusmod
-                    tempor incididunt utlabore Lorem
+                    Expert care in ENT treatments and advanced rhinoplasty
+                    procedures to enhance your health and appearance.
                   </p>
                   <Link href="/contact">
                     <a
@@ -46,146 +49,10 @@ const Index = () => {
         </section>
         {/*====== Hero Area End ======*/}
         {/*====== Why Choose Section Start ======*/}
-        <section className="wcu-section section-gap-top">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-md-10">
-                <div className="section-heading heading-white text-center mb-40">
-                  <span className="tagline">Why Choose Our Medical</span>
-                  <h2 className="title">
-                    Breakthrough in Comprehensive, Flexible Care Delivery Models
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div className="row justify-content-center">
-              <div
-                className="col-lg-4 col-md-6 col-sm-9 wow fadeInUp"
-                data-wow-delay="0.3s"
-              >
-                <div className="image-title-box mt-30">
-                  <h4 className="title">
-                    <Link href="/service">
-                      <a>Optimize Your Health Care Services</a>
-                    </Link>
-                  </h4>
-                  <div className="image">
-                    <img src="assets/img/img-title-box/01.jpg" alt="Image" />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-4 col-md-6 col-sm-9 wow fadeInUp"
-                data-wow-delay="0.4s"
-              >
-                <div className="image-title-box mt-30">
-                  <h4 className="title">
-                    <Link href="/service">
-                      <a>Boost Employee Engagement</a>
-                    </Link>
-                  </h4>
-                  <div className="image">
-                    <img src="assets/img/img-title-box/02.jpg" alt="Image" />
-                  </div>
-                </div>
-              </div>
-              <div
-                className="col-lg-4 col-md-6 col-sm-9 wow fadeInUp"
-                data-wow-delay="0.5s"
-              >
-                <div className="image-title-box mt-30">
-                  <h4 className="title">
-                    <Link href="/service">
-                      <a>Accelerate Your Return On Investment</a>
-                    </Link>
-                  </h4>
-                  <div className="image">
-                    <img src="assets/img/img-title-box/03.jpg" alt="Image" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <WhyUs />
         {/*====== Why Choose Section End ======*/}
         {/*====== About Section Start ======*/}
-        <section className="about-section section-gap">
-          <div className="container">
-            <div className="row justify-content-lg-between justify-content-center align-items-center">
-              <div className="col-lg-6 col-md-10">
-                <div className="circle-image-gallery mb-md-50">
-                  <div className="row">
-                    <div className="col-6 gallery-left">
-                      <div
-                        className="single-img wow fadeInLeft"
-                        data-wow-delay="0.3s"
-                      >
-                        <img
-                          src="assets/img/circle-image-gallery/01.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div
-                        className="single-img wow fadeInRight"
-                        data-wow-delay="0.4s"
-                      >
-                        <img
-                          src="assets/img/circle-image-gallery/04.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div className="col-6 gallery-right">
-                      <div
-                        className="single-img wow fadeInLeft"
-                        data-wow-delay="0.5s"
-                      >
-                        <img
-                          className="animate-float-bob-y"
-                          src="assets/img/circle-image-gallery/03.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div
-                        className="single-img wow fadeInRight"
-                        data-wow-delay="0.6s"
-                      >
-                        <img
-                          src="assets/img/circle-image-gallery/02.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-5 col-lg-6 col-md-8">
-                <div className="about-text">
-                  <div className="section-heading mb-35">
-                    <span className="tagline">About Seeva</span>
-                    <h2 className="title">
-                      All-in-One Worksite Health Solution
-                    </h2>
-                    <p>25 Years Of Experience in Medical Services</p>
-                  </div>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error voluptatem
-                    accusantium doloremque laudantium totam rem aperieaque ipsa
-                    quae ab illo inventore veritatis et quasi architecto beatae
-                    vitae dicta sunt explicabo. Nemo enim ipsam voluptatemsy
-                    quia voluptas sit aspernatur aut odit aut fugit quia
-                    conquntur magni dolores eos qui ratione voluptatem
-                  </p>
-                  <Link href="/about">
-                    <a className="template-btn mt-40">
-                      Learn More <i className="far fa-plus" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <AboutUs />
         {/*====== About Section End ======*/}
         {/*====== Service Section Start ======*/}
         <section className="service-section bg-color-grey section-gap">
@@ -570,86 +437,7 @@ const Index = () => {
         </section>
         {/*====== Doctor Section End ======*/}
         {/*====== Appointment Section Start ======*/}
-        <section className="appointment-section section-gap-bottom">
-          <div className="container">
-            <div className="appointment-form-two">
-              <div className="form-wrap">
-                <div className="section-heading mb-40">
-                  <span className="tagline">Make an Appointment</span>
-                  <h2 className="title">Make an Appointment to Doctor Visit</h2>
-                </div>
-                <form onSubmit={(e) => e.preventDefault()} action="#">
-                  <div className="row">
-                    <div className="col-12">
-                      <div
-                        className="input-field wow fadeInLeft"
-                        data-wow-delay="0.3s"
-                      >
-                        <input type="text" placeholder="Your Full Name" />
-                      </div>
-                    </div>
-                    <div className="col-12">
-                      <div
-                        className="input-field wow fadeInLeft"
-                        data-wow-delay="0.4s"
-                      >
-                        <select>
-                          <option data-dsplay={1} selected disabled="">
-                            Services Category
-                          </option>
-                          <option value={2}>Service One</option>
-                          <option value={3}>Service Two</option>
-                          <option value={4}>Service Three</option>
-                          <option value={5}>Service Four</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div className="col-12">
-                      <div
-                        className="input-field wow fadeInLeft"
-                        data-wow-delay="0.5s"
-                      >
-                        <select>
-                          <option data-dsplay={1} selected disabled="">
-                            Choose Doctors
-                          </option>
-                          <option value={2}>Doctor One</option>
-                          <option value={3}>Doctor Two</option>
-                          <option value={4}>Doctor Three</option>
-                          <option value={5}>Doctor Four</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div className="col-12">
-                      <div
-                        className="input-field wow fadeInLeft"
-                        data-wow-delay="0.6s"
-                      >
-                        <input type="date" />
-                      </div>
-                    </div>
-                    <div className="col-12">
-                      <div
-                        className="input-field wow fadeInLeft"
-                        data-wow-delay="0.7s"
-                      >
-                        <button type="submit" className="template-btn">
-                          Make an Appointment <i className="far fa-plus" />
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <div
-                className="appointment-image"
-                style={{
-                  backgroundImage: "url(assets/img/appointment/07.jpg)",
-                }}
-              ></div>
-            </div>
-          </div>
-        </section>
+        <Appointment />
         {/*====== Appointment Section End ======*/}
         {/*====== Testimonials Section Start ======*/}
         <section className="testimonial-section bg-color-grey section-have-half-bg">
