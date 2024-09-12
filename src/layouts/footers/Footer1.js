@@ -71,7 +71,7 @@ const Footer1 = ({ noNewsletters }) => {
                       <Link href="mailto:support@gmail.com">
                         <a>
                           <i className="far fa-envelope" />
-                          support@entrhino plasty.com
+                          support@entrhinoplasty.com
                         </a>
                       </Link>
                     </li>

@@ -8,7 +8,7 @@ const Footer = ({ footer, noNewsletters }) => {
       case 1:
         return <Footer1 noNewsletters={noNewsletters} />;
       case 2:
-        return <Footer2 noNewsletters={noNewsletters} />;
+        return <Footer1 noNewsletters={noNewsletters} />;
       default:
         return <Footer1 noNewsletters={noNewsletters} />;
     }
