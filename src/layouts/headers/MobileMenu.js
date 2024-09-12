@@ -38,10 +38,14 @@ const MobileMenu = ({ mobileTrigger, setMobileTrigger }) => {
             <li>
               <Link href="/">Home</Link>
             </li>
+
+            <li>
+              <Link href="/service">Services</Link>
+            </li>
             <li>
               <Link href="/about">About</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="service">
                 <a>
                   Services
@@ -53,7 +57,7 @@ const MobileMenu = ({ mobileTrigger, setMobileTrigger }) => {
               <ul className="sub-menu">
                 <Services />
               </ul>
-            </li>
+            </li> */}
             <li>
               <Link href="/gallery">Our Gallery</Link>
             </li>

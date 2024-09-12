@@ -28,7 +28,7 @@ const WhyUs = () => {
                   </Link>
                 </h4>
                 <div className="image">
-                  <img src="assets/img/img-title-box/01.jpg" alt="Image" />
+                  <img src="assets/img/img-title-box/1.png" alt="Image" />
                 </div>
               </div>
             </div>
@@ -43,7 +43,7 @@ const WhyUs = () => {
                   </Link>
                 </h4>
                 <div className="image">
-                  <img src="assets/img/img-title-box/02.jpg" alt="Image" />
+                  <img src="assets/img/img-title-box/2.png" alt="Image" />
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ const WhyUs = () => {
                   </Link>
                 </h4>
                 <div className="image">
-                  <img src="assets/img/img-title-box/03.jpg" alt="Image" />
+                  <img src="assets/img/img-title-box/3.png" alt="Image" />
                 </div>
               </div>
             </div>

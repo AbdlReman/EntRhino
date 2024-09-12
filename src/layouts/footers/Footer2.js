@@ -1,4 +1,8 @@
 import React from "react";
+import Newlatter from "../../components/Newlatter";
+import { CiLocationOn } from "react-icons/ci";
+import { MdOutlineEmail } from "react-icons/md";
+import { LuPhone } from "react-icons/lu";
 
 const Footer2 = ({ noNewsletters }) => {
   return (
@@ -16,14 +20,15 @@ const Footer2 = ({ noNewsletters }) => {
                   className="cta-boxed-two bg-color-secondary bg-size-cover blend-mode-multiply mb-30"
                   style={{
                     backgroundImage:
-                      "url(assets/img/cta-img/cta-boxed-2-1.jpg)",
+                      "url(assets/img/cta-img/cta-boxed-2-1.png)",
                   }}
                 >
-                  <h2 className="cta-title">
-                    Looking a Doctors For Health Care
-                  </h2>
-                  <a href="#" className="template-btn template-btn-bordered">
-                    Find Doctor <i className="far fa-plus" />
+                  <h2 className="cta-title">We're Ready To Help You</h2>
+                  <a
+                    href="/contact"
+                    className="template-btn template-btn-bordered"
+                  >
+                    Contact us <i className="far fa-plus" />
                   </a>
                 </div>
               </div>
@@ -32,11 +37,14 @@ const Footer2 = ({ noNewsletters }) => {
                   className="cta-boxed-two bg-color-secondary bg-size-cover blend-mode-multiply mb-30"
                   style={{
                     backgroundImage:
-                      "url(assets/img/cta-img/cta-boxed-2-2.jpg)",
+                      "url(assets/img/cta-img/cta-boxed-2-2.png)",
                   }}
                 >
                   <h2 className="cta-title">Make Appointment Online (24/7)</h2>
-                  <a href="#" className="template-btn template-btn-bordered">
+                  <a
+                    href="/contact"
+                    className="template-btn template-btn-bordered"
+                  >
                     Appointment <i className="far fa-plus" />
                   </a>
                 </div>
@@ -46,11 +54,14 @@ const Footer2 = ({ noNewsletters }) => {
                   className="cta-boxed-two bg-color-secondary bg-size-cover blend-mode-multiply mb-30"
                   style={{
                     backgroundImage:
-                      "url(assets/img/cta-img/cta-boxed-2-3.jpg)",
+                      "url(assets/img/cta-img/cta-boxed-2-3.png)",
                   }}
                 >
-                  <h2 className="cta-title">Innovative Psychial Therapist</h2>
-                  <a href="#" className="template-btn template-btn-bordered">
+                  <h2 className="cta-title">Looking a Doctors For Treatment</h2>
+                  <a
+                    href="/contact"
+                    className="template-btn template-btn-bordered"
+                  >
                     Find Doctor <i className="far fa-plus" />
                   </a>
                 </div>
@@ -69,26 +80,26 @@ const Footer2 = ({ noNewsletters }) => {
                     <img src="assets/img/logo-white.png" alt="Medibo" />
                   </div>
                   <p>
-                    Sed ut perspi unde omniste natus error sit voluptatem acc
-                    doloremque laudantium
+                    Our expert team specializes in diagnosing and treating ear,
+                    nose, and throat conditions
                   </p>
                   <ul className="contact-list">
                     <li>
                       <a href="https://goo.gl/maps/inpkL6wUZqMR3opX7">
-                        <i className="far fa-map-marker-alt" />
-                        55 Main Road, USA
+                        <CiLocationOn id="footer2icon" />
+                        ENT & Rhinoplasty Hub, Saidpur Road
                       </a>
                     </li>
                     <li>
                       <a href="mailto:support@gmail.com">
-                        <i className="far fa-envelope" />
-                        support@gmail.com
+                        <MdOutlineEmail id="footer2icon" />
+                        support@entrhino plasty.com
                       </a>
                     </li>
                     <li>
                       <a href="tel:01267899">
-                        <i className="far fa-phone" />
-                        +012 (345) 678 99
+                        <LuPhone id="footer2icon" />
+                        0300 584 3974
                       </a>
                     </li>
                   </ul>
@@ -102,22 +113,22 @@ const Footer2 = ({ noNewsletters }) => {
                         <h4 className="widget-title">Popular Services</h4>
                         <ul className="nav-links">
                           <li>
-                            <a href="#">Orthopedic Care</a>
+                            <a href="/rhinoplasty">Rhinoplasty</a>
                           </li>
                           <li>
-                            <a href="#">Gynecology Care</a>
+                            <a href="/tonsillectomy">Tonsillectomy</a>
                           </li>
                           <li>
-                            <a href="#">Cardiology Care</a>
+                            <a href="/adenoidectomy">Adenoidectomy</a>
                           </li>
                           <li>
-                            <a href="#">Dentistry Care</a>
+                            <a href="/septoplasty">Septoplasty</a>
                           </li>
                           <li>
-                            <a href="#">Gastroenterology</a>
+                            <a href="/turbinoplasty">Turbinoplasty</a>
                           </li>
                           <li>
-                            <a href="#">Urgent Care</a>
+                            <a href="/biopsy/">biopsy</a>
                           </li>
                         </ul>
                       </div>
@@ -126,25 +137,22 @@ const Footer2 = ({ noNewsletters }) => {
                   <div className="col-xl-5 col-sm-6">
                     <div className="d-flex justify-content-lg-center">
                       <div className="widget nav-widget">
-                        <h4 className="widget-title">About Us</h4>
+                        <h4 className="widget-title">Pages</h4>
                         <ul className="nav-links">
                           <li>
-                            <a href="#">Success Story</a>
+                            <a href="/">Home</a>
                           </li>
                           <li>
-                            <a href="#">Need a Career ?</a>
+                            <a href="/service">Services</a>
                           </li>
                           <li>
-                            <a href="#">Privacy Policy</a>
+                            <a href="/about">About</a>
                           </li>
                           <li>
-                            <a href="#">Need Support ?</a>
+                            <a href="/gallery">Gallery</a>
                           </li>
                           <li>
-                            <a href="#">Doctors</a>
-                          </li>
-                          <li>
-                            <a href="#">Latest News</a>
+                            <a href="/contact">Contact</a>
                           </li>
                         </ul>
                       </div>
@@ -152,36 +160,12 @@ const Footer2 = ({ noNewsletters }) => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-10">
-                <div className="widget newsletters-widget">
-                  <h4 className="widget-title">Newsletters</h4>
-                  <p>
-                    Sed ut perspiciatis unde omniste <br /> natus error sit
-                    voluptatem
-                  </p>
-                  <form
-                    onSubmit={(e) => e.preventDefault()}
-                    action="#"
-                    className="newsletters-form"
-                  >
-                    <input type="email" placeholder="Email Address" />
-                    <button type="submit">
-                      <i className="far fa-arrow-right" />
-                    </button>
-                  </form>
-                  <div className="opening-notice mt-30">
-                    <h6>
-                      <i className="far fa-clock" /> Opening Hours
-                    </h6>
-                    <p>Sun - Friday, 08:00 am - 05:00 pm</p>
-                  </div>
-                </div>
-              </div>
+              <Newlatter />
             </div>
           </div>
           <div className="copyright-area">
             <p>
-              © 2021 <a href="#">Seeva</a>. All Rights Reserved
+              © 2024 <a href="#">EntRhinoplasty</a>. All Rights Reserved
             </p>
           </div>
         </div>

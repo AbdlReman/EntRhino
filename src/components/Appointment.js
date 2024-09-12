@@ -111,7 +111,7 @@ const Appointment = () => {
             <div
               className="appointment-image"
               style={{
-                backgroundImage: "url(assets/img/appointment/07.jpg)",
+                backgroundImage: "url(assets/img/appointment/07.png)",
               }}
             ></div>
           </div>

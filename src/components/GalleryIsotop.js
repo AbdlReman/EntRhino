@@ -47,11 +47,11 @@ const GalleryIsotop = () => {
             </div>
           ))}
         </div>
-        <div className="read-more text-center mt-60">
+        {/* <div className="read-more text-center mt-60">
           <a href="#" className="template-btn">
             View More Gallery <i className="far fa-plus"></i>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

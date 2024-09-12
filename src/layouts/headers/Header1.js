@@ -79,11 +79,13 @@ const Header1 = ({ headerTopbar, position }) => {
                 <li>
                   <Link href="/">Home</Link>
                 </li>
-
+                <li>
+                  <Link href="service">Services</Link>
+                </li>
                 <li>
                   <Link href="about">About</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="service">
                     <a>
                       Services
@@ -95,7 +97,7 @@ const Header1 = ({ headerTopbar, position }) => {
                   <ul className="sub-menu">
                     <Services />
                   </ul>
-                </li>
+                </li> */}
                 <li>
                   <Link href="/gallery">Our Gallery</Link>
                 </li>

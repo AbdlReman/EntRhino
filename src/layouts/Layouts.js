@@ -1,8 +1,9 @@
 import React, { Fragment, useEffect } from "react";
-import ScrollTop from "../components/ScrollTop";
+// import ScrollTop from "../components/ScrollTop";
 import { animation, niceSelect, progressBar, stickyNav } from "../utils";
 import Footer from "./footers/Footer";
 import HeadersLayouts from "./headers/HeadersLayouts";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const Layouts = ({
   children,
@@ -27,7 +28,8 @@ const Layouts = ({
       )}
       {children}
       {!noFooter && <Footer footer={footer} noNewsletters={noNewsletters} />}
-      <ScrollTop />
+      {/* <ScrollTop /> */}
+      <WhatsAppButton />
     </Fragment>
   );
 };

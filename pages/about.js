@@ -215,7 +215,7 @@ const About = () => {
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-6 col-md-10">
               <div className="faq-image text-center text-lg-left mb-md-50">
-                <img src="assets/img/section-img/faq-image.jpg" alt="Image" />
+                <img src="assets/img/section-img/faq-image.png" alt="Image" />
               </div>
             </div>
             <div className="col-lg-6 col-md-9 col-sm-11">

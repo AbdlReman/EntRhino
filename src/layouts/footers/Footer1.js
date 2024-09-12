@@ -1,4 +1,5 @@
 import React from "react";
+import Newlatter from "../../components/Newlatter";
 
 const Footer1 = ({ noNewsletters }) => {
   return (
@@ -11,7 +12,7 @@ const Footer1 = ({ noNewsletters }) => {
             <div
               className="cta-inner bg-color-secondary bg-size-cover blend-mode-multiply"
               style={{
-                backgroundImage: "url(assets/img/cta-img/cta-boxed-bg-1.jpg)",
+                backgroundImage: "url(assets/img/cta-img/cta-boxed-bg-1.png)",
               }}
             >
               <div className="row justify-content-center">
@@ -25,13 +26,16 @@ const Footer1 = ({ noNewsletters }) => {
                     </div>
                     <ul className="cta-buttons d-flex justify-content-center flex-wrap">
                       <li>
-                        <a href="#" className="template-btn template-btn-white">
-                          Get Free Quote <i className="far fa-plus" />
+                        <a
+                          href="/contact"
+                          className="template-btn template-btn-white"
+                        >
+                          Contact US <i className="far fa-plus" />
                         </a>
                       </li>
                       <li>
                         <a
-                          href="#"
+                          href="/contact"
                           className="template-btn template-btn-bordered"
                         >
                           Get Appointment <i className="far fa-plus" />
@@ -54,27 +58,24 @@ const Footer1 = ({ noNewsletters }) => {
                   <div className="footer-logo">
                     <img src="assets/img/logo.png" alt="Medibo" />
                   </div>
-                  <p>
-                    Sed ut perspi unde omniste natus error sit voluptatem acc
-                    doloremque laudantium
-                  </p>
+                  <p>we are committed to providing exceptional care.</p>
                   <ul className="contact-list">
                     <li>
                       <a href="https://goo.gl/maps/inpkL6wUZqMR3opX7">
                         <i className="far fa-map-marker-alt" />
-                        55 Main Road, USA
+                        ENT & Rhinoplasty Hub, Saidpur Road
                       </a>
                     </li>
                     <li>
                       <a href="mailto:support@gmail.com">
                         <i className="far fa-envelope" />
-                        support@gmail.com
+                        support@entrhino plasty.com
                       </a>
                     </li>
                     <li>
                       <a href="tel:01267899">
                         <i className="far fa-phone" />
-                        +012 (345) 678 99
+                        0300 584 3974
                       </a>
                     </li>
                   </ul>
@@ -87,22 +88,22 @@ const Footer1 = ({ noNewsletters }) => {
                       <h4 className="widget-title">Popular Services</h4>
                       <ul className="nav-links">
                         <li>
-                          <a href="#">Orthopedic Care</a>
+                          <a href="/rhinoplasty">Rhinoplasty</a>
                         </li>
                         <li>
-                          <a href="#">Gynecology Care</a>
+                          <a href="/tonsillectomy">Tonsillectomy</a>
                         </li>
                         <li>
-                          <a href="#">Cardiology Care</a>
+                          <a href="/adenoidectomy">Adenoidectomy</a>
                         </li>
                         <li>
-                          <a href="#">Dentistry Care</a>
+                          <a href="/septoplasty">Septoplasty</a>
                         </li>
                         <li>
-                          <a href="#">Gastroenterology</a>
+                          <a href="/turbinoplasty">Turbinoplasty</a>
                         </li>
                         <li>
-                          <a href="#">Urgent Care</a>
+                          <a href="/biopsy">biopsy</a>
                         </li>
                       </ul>
                     </div>
@@ -170,30 +171,12 @@ const Footer1 = ({ noNewsletters }) => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-10">
-                <div className="widget newsletters-widget">
-                  <h4 className="widget-title">Newsletters</h4>
-                  <p>
-                    Sed ut perspiciatis unde omniste <br /> natus error sit
-                    voluptatem
-                  </p>
-                  <form
-                    onSubmit={(e) => e.preventDefault()}
-                    action="#"
-                    className="newsletters-form"
-                  >
-                    <input type="email" placeholder="Email Address" />
-                    <button type="submit">
-                      <i className="far fa-arrow-right" />
-                    </button>
-                  </form>
-                </div>
-              </div>
+              <Newlatter />
             </div>
           </div>
           <div className="copyright-area">
             <p>
-              © 2021 <a href="#">Seeva</a>. All Rights Reserved
+              © 2024 <a href="#">EntRhinoplasty </a>. All Rights Reserved
             </p>
           </div>
         </div>
