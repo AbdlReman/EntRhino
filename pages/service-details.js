@@ -1,12 +1,29 @@
-import Link from "next/link";
-import React from "react";
-import PageBanner from "../src/components/PageBanner";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import Layouts from "../src/layouts/Layouts";
+import PageBanner from "../src/components/PageBanner";
 
 const ServiceDetails = () => {
+  const router = useRouter();
+  const { slug } = router.query;
+  const [service, setService] = useState(null);
+
+  useEffect(() => {
+    if (slug) {
+      fetch(`/api/servicesData`)
+        .then((response) => response.json())
+        .then((data) => {
+          const foundService = data.find((item) => item.slug === slug);
+          setService(foundService);
+        });
+    }
+  }, [slug]);
+
+  if (!service) return <p>Loading...</p>;
+
   return (
     <Layouts footer={2}>
-      <PageBanner title={"Service Details"} />
+      <PageBanner title={service.title} />
       <>
         <section className="services-area section-gap">
           <div className="container">
@@ -14,29 +31,10 @@ const ServiceDetails = () => {
               <div className="col-lg-8 order-lg-last">
                 <div className="service-details-wrapper">
                   <div className="service-thumbnail mb-50">
-                    <img
-                      src="assets/img/service/service-details-1.jpg"
-                      alt="Image"
-                    />
+                    <img src={service.image} alt={service.title} />
                   </div>
-                  <h2 className="service-title">Neurology Care</h2>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi archite cto beatae vitae dicta sunt explicabo. Nemo
-                    enim ipsam voluptatem quia voluptas sit aspe rnatur aut odit
-                    aut fugit sed quia consequuntur magni dolores eos qui
-                    ratione voluptatem sequi nesciunt. Neque porro quisquam est
-                    qui dolorem ipsum quia dolor sit amet consect etur, adipisci
-                    velit, sed quia non numquam eius modi tempora incidunt ut
-                    labore et dolore magnam aliquam quaerat voluptatem. Ut enim
-                    ad minima veniam, quis nostrum exercita tionem ullam
-                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                    consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                    voluptate velit esse quam nihil molestiae cons equatur, vel
-                    illum qui dolorem eum fugiat quo voluptas nulla pariatur
-                  </p>
+                  <h2 className="service-title">{service.title}</h2>
+                  <p>{service.description}</p>
                 </div>
               </div>
               <div className="col-lg-4 col-md-10 order-lg-first">
@@ -45,51 +43,51 @@ const ServiceDetails = () => {
                     <h3 className="widget-title">Other services</h3>
                     <ul>
                       <li>
-                        <a href="#">
+                        <a href="/rhinoplasty">
                           <i className="far fa-angle-right" />
-                          Orthopedic Care
+                          Rhinoplasty
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="/tonsillectomy">
                           <i className="far fa-angle-right" />
-                          Gynecology Care
+                          tonsillectomy
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="/adenoidectomy">
                           <i className="far fa-angle-right" />
-                          Primary Care
+                          Adenoidectomy
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="/septoplasty">
                           <i className="far fa-angle-right" />
-                          Cardiology Care
+                          septoplasty
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="/turbinoplasty">
                           <i className="far fa-angle-right" />
-                          Cancer Care
+                          turbinoplasty
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="/biopsy">
                           <i className="far fa-angle-right" />
-                          Dentistry Care
+                          Biopsy
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="/neck-dissection">
                           <i className="far fa-angle-right" />
-                          Gastrology Care
+                          Neck Dissection
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="/tympanoplasty">
                           <i className="far fa-angle-right" />
-                          Urgent Care
+                          Tympanoplasty
                         </a>
                       </li>
                     </ul>
@@ -103,6 +101,17 @@ const ServiceDetails = () => {
         {/*====== Related Services Start ======*/}
       </>
     </Layouts>
+    // <Layouts>
+    //   <PageBanner title={service.title} pageName="Service Details" />
+    //   <section className="service-details-area section-gap">
+    //     <div className="container">
+    //       <h2>{service.title}</h2>
+    //       <img src={service.image} alt={service.title} />
+    //       <p>{service.description}</p>
+    //     </div>
+    //   </section>
+    // </Layouts>
   );
 };
+
 export default ServiceDetails;
