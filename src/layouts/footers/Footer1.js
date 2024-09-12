@@ -1,5 +1,6 @@
 import React from "react";
 import Newlatter from "../../components/Newlatter";
+import Link from "next/link";
 
 const Footer1 = ({ noNewsletters }) => {
   return (
@@ -26,20 +27,18 @@ const Footer1 = ({ noNewsletters }) => {
                     </div>
                     <ul className="cta-buttons d-flex justify-content-center flex-wrap">
                       <li>
-                        <a
-                          href="/contact"
-                          className="template-btn template-btn-white"
-                        >
-                          Contact US <i className="far fa-plus" />
-                        </a>
+                        <Link href="/contact">
+                          <a className="template-btn template-btn-white">
+                            Contact US <i className="far fa-plus" />
+                          </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/contact"
-                          className="template-btn template-btn-bordered"
-                        >
-                          Get Appointment <i className="far fa-plus" />
-                        </a>
+                        <Link href="/contact">
+                          <a className="template-btn template-btn-bordered">
+                            Get Appointment <i className="far fa-plus" />
+                          </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -61,22 +60,28 @@ const Footer1 = ({ noNewsletters }) => {
                   <p>we are committed to providing exceptional care.</p>
                   <ul className="contact-list">
                     <li>
-                      <a href="https://goo.gl/maps/inpkL6wUZqMR3opX7">
-                        <i className="far fa-map-marker-alt" />
-                        ENT & Rhinoplasty Hub, Saidpur Road
-                      </a>
+                      <Link href="https://goo.gl/maps/inpkL6wUZqMR3opX7">
+                        <a>
+                          <i className="far fa-map-marker-alt" />
+                          ENT & Rhinoplasty Hub, Saidpur Road
+                        </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="mailto:support@gmail.com">
-                        <i className="far fa-envelope" />
-                        support@entrhino plasty.com
-                      </a>
+                      <Link href="mailto:support@gmail.com">
+                        <a>
+                          <i className="far fa-envelope" />
+                          support@entrhino plasty.com
+                        </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="tel:01267899">
-                        <i className="far fa-phone" />
-                        0300 584 3974
-                      </a>
+                      <Link href="tel:01267899">
+                        <a>
+                          <i className="far fa-phone" />
+                          0300 584 3974
+                        </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -88,22 +93,34 @@ const Footer1 = ({ noNewsletters }) => {
                       <h4 className="widget-title">Popular Services</h4>
                       <ul className="nav-links">
                         <li>
-                          <a href="/rhinoplasty">Rhinoplasty</a>
+                          <Link href="/rhinoplasty">
+                            <a>Rhinoplasty</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="/tonsillectomy">Tonsillectomy</a>
+                          <Link href="/tonsillectomy">
+                            <a>Tonsillectomy</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="/adenoidectomy">Adenoidectomy</a>
+                          <Link href="/adenoidectomy">
+                            <a>Adenoidectomy</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="/septoplasty">Septoplasty</a>
+                          <Link href="/septoplasty">
+                            <a>Septoplasty</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="/turbinoplasty">Turbinoplasty</a>
+                          <Link href="/turbinoplasty">
+                            <a>Turbinoplasty</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="/biopsy">biopsy</a>
+                          <Link href="/biopsy">
+                            <a>biopsy</a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -117,54 +134,66 @@ const Footer1 = ({ noNewsletters }) => {
                             src="assets/img/instagram/01.jpg"
                             alt="Instagram"
                           />
-                          <a href="#">
-                            <i className="fab fa-instagram" />
-                          </a>
+                          <Link href="#">
+                            <a>
+                              <i className="fab fa-instagram" />
+                            </a>
+                          </Link>
                         </div>
                         <div className="single-image">
                           <img
                             src="assets/img/instagram/02.jpg"
                             alt="Instagram"
                           />
-                          <a href="#">
-                            <i className="fab fa-instagram" />
-                          </a>
+                          <Link href="#">
+                            <a>
+                              <i className="fab fa-instagram" />
+                            </a>
+                          </Link>
                         </div>
                         <div className="single-image">
                           <img
                             src="assets/img/instagram/03.jpg"
                             alt="Instagram"
                           />
-                          <a href="#">
-                            <i className="fab fa-instagram" />
-                          </a>
+                          <Link href="#">
+                            <a>
+                              <i className="fab fa-instagram" />
+                            </a>
+                          </Link>
                         </div>
                         <div className="single-image">
                           <img
                             src="assets/img/instagram/04.jpg"
                             alt="Instagram"
                           />
-                          <a href="#">
-                            <i className="fab fa-instagram" />
-                          </a>
+                          <Link href="#">
+                            <a>
+                              <i className="fab fa-instagram" />
+                            </a>
+                          </Link>
                         </div>
                         <div className="single-image">
                           <img
                             src="assets/img/instagram/05.jpg"
                             alt="Instagram"
                           />
-                          <a href="#">
-                            <i className="fab fa-instagram" />
-                          </a>
+                          <Link href="#">
+                            <a>
+                              <i className="fab fa-instagram" />
+                            </a>
+                          </Link>
                         </div>
                         <div className="single-image">
                           <img
                             src="assets/img/instagram/06.jpg"
                             alt="Instagram"
                           />
-                          <a href="#">
-                            <i className="fab fa-instagram" />
-                          </a>
+                          <Link href="#">
+                            <a>
+                              <i className="fab fa-instagram" />
+                            </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -176,7 +205,7 @@ const Footer1 = ({ noNewsletters }) => {
           </div>
           <div className="copyright-area">
             <p>
-              © 2024 <a href="#">EntRhinoplasty </a>. All Rights Reserved
+              © 2024 <Link href="#">EntRhinoplasty</Link>. All Rights Reserved
             </p>
           </div>
         </div>

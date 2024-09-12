@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import client from "./contentfulClient";
+import Link from "next/link";
 
 const GallaryHome = () => {
   const [galleryItems, setGalleryItems] = useState([]);
@@ -51,9 +52,11 @@ const GallaryHome = () => {
           ))}
         </div>
         <div className="read-more text-center mt-60">
-          <a href="/gallery" className="template-btn">
-            View More Gallery <i className="far fa-plus"></i>
-          </a>
+          <Link href="/gallery" className="template-btn">
+            <span>
+              View More Gallery <i className="far fa-plus"></i>
+            </span>
+          </Link>
         </div>
       </div>
     </section>

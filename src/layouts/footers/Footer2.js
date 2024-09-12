@@ -3,6 +3,7 @@ import Newlatter from "../../components/Newlatter";
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineEmail } from "react-icons/md";
 import { LuPhone } from "react-icons/lu";
+import Link from "next/link";
 
 const Footer2 = ({ noNewsletters }) => {
   return (
@@ -24,12 +25,14 @@ const Footer2 = ({ noNewsletters }) => {
                   }}
                 >
                   <h2 className="cta-title">We're Ready To Help You</h2>
-                  <a
+                  <Link
                     href="/contact"
                     className="template-btn template-btn-bordered"
                   >
-                    Contact us <i className="far fa-plus" />
-                  </a>
+                    <span>
+                      Contact us <i className="far fa-plus" />
+                    </span>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-4 col-md-6">
@@ -41,12 +44,14 @@ const Footer2 = ({ noNewsletters }) => {
                   }}
                 >
                   <h2 className="cta-title">Make Appointment Online (24/7)</h2>
-                  <a
+                  <Link
                     href="/contact"
                     className="template-btn template-btn-bordered"
                   >
-                    Appointment <i className="far fa-plus" />
-                  </a>
+                    <span>
+                      Appointment <i className="far fa-plus" />
+                    </span>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-4 col-md-8">
@@ -57,13 +62,17 @@ const Footer2 = ({ noNewsletters }) => {
                       "url(assets/img/cta-img/cta-boxed-2-3.png)",
                   }}
                 >
-                  <h2 className="cta-title">Looking a Doctors For Treatment</h2>
-                  <a
+                  <h2 className="cta-title">
+                    Looking for Doctors For Treatment
+                  </h2>
+                  <Link
                     href="/contact"
                     className="template-btn template-btn-bordered"
                   >
-                    Find Doctor <i className="far fa-plus" />
-                  </a>
+                    <span>
+                      Find Doctor <i className="far fa-plus" />
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -84,24 +93,32 @@ const Footer2 = ({ noNewsletters }) => {
                     nose, and throat conditions
                   </p>
                   <ul className="contact-list">
-                    <li>
-                      <a href="https://goo.gl/maps/inpkL6wUZqMR3opX7">
-                        <CiLocationOn id="footer2icon" />
-                        ENT & Rhinoplasty Hub, Saidpur Road
-                      </a>
-                    </li>
-                    <li>
-                      <a href="mailto:support@gmail.com">
-                        <MdOutlineEmail id="footer2icon" />
-                        support@entrhino plasty.com
-                      </a>
-                    </li>
-                    <li>
-                      <a href="tel:01267899">
-                        <LuPhone id="footer2icon" />
-                        0300 584 3974
-                      </a>
-                    </li>
+                    <ul className="contact-list">
+                      <li>
+                        <Link href="https://goo.gl/maps/inpkL6wUZqMR3opX7">
+                          <span>
+                            <CiLocationOn id="footer2icon" />
+                            ENT &amp; Rhinoplasty Hub, Saidpur Road
+                          </span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="mailto:support@gmail.com">
+                          <span>
+                            <MdOutlineEmail id="footer2icon" />
+                            support@entrhino plasty.com
+                          </span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="tel:03005843974">
+                          <span>
+                            <LuPhone id="footer2icon" />
+                            0300 584 3974
+                          </span>
+                        </Link>
+                      </li>
+                    </ul>
                   </ul>
                 </div>
               </div>
@@ -113,22 +130,34 @@ const Footer2 = ({ noNewsletters }) => {
                         <h4 className="widget-title">Popular Services</h4>
                         <ul className="nav-links">
                           <li>
-                            <a href="/rhinoplasty">Rhinoplasty</a>
+                            <Link href="/rhinoplasty">
+                              <span>Rhinoplasty</span>
+                            </Link>
                           </li>
                           <li>
-                            <a href="/tonsillectomy">Tonsillectomy</a>
+                            <Link href="/tonsillectomy">
+                              <span>Tonsillectomy</span>
+                            </Link>
                           </li>
                           <li>
-                            <a href="/adenoidectomy">Adenoidectomy</a>
+                            <Link href="/adenoidectomy">
+                              <span>Adenoidectomy</span>
+                            </Link>
                           </li>
                           <li>
-                            <a href="/septoplasty">Septoplasty</a>
+                            <Link href="/septoplasty">
+                              <span>Septoplasty</span>
+                            </Link>
                           </li>
                           <li>
-                            <a href="/turbinoplasty">Turbinoplasty</a>
+                            <Link href="/turbinoplasty">
+                              <span>Turbinoplasty</span>
+                            </Link>
                           </li>
                           <li>
-                            <a href="/biopsy/">biopsy</a>
+                            <Link href="/biopsy/">
+                              <span>Biopsy</span>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -140,19 +169,29 @@ const Footer2 = ({ noNewsletters }) => {
                         <h4 className="widget-title">Pages</h4>
                         <ul className="nav-links">
                           <li>
-                            <a href="/">Home</a>
+                            <Link href="/">
+                              <span>Home</span>
+                            </Link>
                           </li>
                           <li>
-                            <a href="/service">Services</a>
+                            <Link href="/service">
+                              <span>Services</span>
+                            </Link>
                           </li>
                           <li>
-                            <a href="/about">About</a>
+                            <Link href="/about">
+                              <span>About</span>
+                            </Link>
                           </li>
                           <li>
-                            <a href="/gallery">Gallery</a>
+                            <Link href="/gallery">
+                              <span>Gallery</span>
+                            </Link>
                           </li>
                           <li>
-                            <a href="/contact">Contact</a>
+                            <Link href="/contact">
+                              <span>Contact</span>
+                            </Link>
                           </li>
                         </ul>
                       </div>

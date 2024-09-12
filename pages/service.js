@@ -122,24 +122,6 @@ const Service = () => {
           </div>
         </div>
       </section>
-      <style jsx>{`
-        .pagination {
-          display: flex;
-          justify-content: center;
-          margin-top: 20px;
-        }
-        .page-button {
-          border: 1px solid #ddd;
-          padding: 8px 16px;
-          margin: 0 5px;
-          cursor: pointer;
-          background-color: #f9f9f9;
-        }
-        .page-button.active {
-          background-color: #992123;
-          color: #fff;
-        }
-      `}</style>
     </Layouts>
   );
 };
