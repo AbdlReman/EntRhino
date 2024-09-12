@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 
 const Appointment = () => {
   const form = useRef();
+  const [message, setMessage] = useState(""); // State to manage success/failure messages
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -16,14 +17,17 @@ const Appointment = () => {
       )
       .then((result) => {
         console.log(result.text);
-        alert("Appointment request sent successfully!");
+        setMessage("Appointment request sent successfully!");
 
         // Clear the form fields
         form.current.reset();
+        setTimeout(() => {
+          setMessage(""); // Clear the error message
+        }, 3000);
       })
       .catch((error) => {
         console.log(error.text);
-        alert("Failed to send the request. Please try again.");
+        setMessage("Failed to send the request. Please try again.");
       });
   };
 
@@ -37,6 +41,16 @@ const Appointment = () => {
                 <span className="tagline">Make an Appointment</span>
                 <h2 className="title">Make an Appointment to Doctor Visit</h2>
               </div>
+
+              {message && (
+                <div
+                  className="alert alert-success"
+                  style={{ marginBottom: "20px", color: "green" }}
+                >
+                  {message}
+                </div>
+              )}
+
               <form
                 ref={form}
                 onSubmit={sendEmail}
