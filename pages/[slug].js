@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Layouts from "../src/layouts/Layouts";
 import PageBanner from "../src/components/PageBanner";
 import Link from "next/link";
+import Head from "next/head";
 
 const ServiceDetails = () => {
   const router = useRouter();
@@ -24,6 +25,10 @@ const ServiceDetails = () => {
 
   return (
     <Layouts footer={2}>
+      <Head>
+        <title>{service.title}</title>
+        <meta name="description" content={service.description} />
+      </Head>
       <PageBanner title={service.title} />
       <>
         <section className="services-area section-gap">
