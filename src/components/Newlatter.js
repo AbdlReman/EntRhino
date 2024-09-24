@@ -33,7 +33,7 @@ const Newsletter = () => {
         <div className="widget newsletters-widget">
           <h4 className="widget-title">Newsletters</h4>
           <p>
-            Sed ut perspiciatis unde omniste <br /> natus error sit voluptatem
+            Stay Updated with the Latest <br /> Tips, and News
           </p>
           <form ref={form} onSubmit={sendEmail} className="newsletters-form">
             <input
@@ -50,7 +50,7 @@ const Newsletter = () => {
             <h6>
               <i className="far fa-clock" /> Opening Hours
             </h6>
-            <p>Sun - Friday, 08:00 am - 05:00 pm</p>
+            <p>Mon - Saturday, 04:00 pm - 07:00 pm</p>
           </div>
         </div>
       </div>

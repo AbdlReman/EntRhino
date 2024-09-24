@@ -46,7 +46,7 @@ const AboutIndex = () => {
                       data-wow-delay="0.6s"
                     >
                       <img
-                        src="assets/img/circle-image-gallery/02.png"
+                        src="assets/img/circle-image-gallery/1.jpeg"
                         alt=""
                       />
                     </div>

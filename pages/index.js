@@ -9,15 +9,23 @@ import Appointment from "../src/components/Appointment";
 import Services from "../src/components/Services";
 import GallaryHome from "../src/components/GallaryHome";
 import AboutIndex from "../src/components/AboutIndex";
+import Head from "next/head";
+import { getMetadata } from "./api/getMetadata";
 
 const Counter = dynamic(() => import("../src/components/Counter"), {
   ssr: false,
 });
 
 const Index = () => {
+  const page = "home";
+  const { title, description } = getMetadata(page);
   return (
     <Layouts position={"absolute"}>
       <>
+        <Head>
+          <title>{title}</title>
+          <meta name="description" content={description} />
+        </Head>
         {/*====== Hero Area Start ======*/}
         <section className="hero-area-one">
           <div className="container">
@@ -25,7 +33,7 @@ const Index = () => {
               <div className="col-lg-5 col-md-8">
                 <div className="hero-content">
                   <h1 className="title wow fadeInDown" data-wow-delay="0.3s">
-                    ENT &amp; Rhinoplasty Hub
+                    ENT. &amp; Rhinoplasty Hub
                   </h1>
                   <p className="wow fadeInLeft" data-wow-delay="0.4s">
                     Expert care in ENT treatments and advanced rhinoplasty

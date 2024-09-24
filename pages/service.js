@@ -54,6 +54,8 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import PageBanner from "../src/components/PageBanner";
 import Layouts from "../src/layouts/Layouts";
+import { getMetadata } from "./api/getMetadata";
+import Head from "next/head";
 
 const Service = () => {
   const [services, setServices] = useState([]);
@@ -82,8 +84,14 @@ const Service = () => {
     setCurrentPage(pageNumber);
   };
 
+  const page = "services"; // Set the page name here
+  const { title, description } = getMetadata(page);
   return (
     <Layouts footer={2}>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Head>
       <PageBanner title={"Our Services"} pageName="Services" />
       <section className="services-area section-gap-top-less bg-color-grey">
         <div className="container">

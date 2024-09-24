@@ -6,6 +6,14 @@ const servicesData = [
       "Rhinoplasty is a surgical procedure that reshapes or reconstructs the nose for either cosmetic or medical reasons. It can be performed to enhance facial harmony, improve proportions, or to address functional problems like breathing issues caused by structural abnormalities. The surgery can involve altering the bone, cartilage, or skin of the nose, depending on the patient's goals or needs. Recovery typically takes several weeks, and the results can be life-enhancing, improving both appearance and functionality.",
     image: "assets/img/iconic-box/rhinoplastyure.PNG",
     slug: "rhinoplasty",
+    gallery: [
+      "assets/img/gallary/rhinoplasty/6.jpeg",
+      "assets/img/gallary/rhinoplasty/5.jpeg",
+      "assets/img/gallary/rhinoplasty/4.jpeg",
+      "assets/img/gallary/rhinoplasty/3.jpeg",
+      "assets/img/gallary/rhinoplasty/2.jpeg",
+      "assets/img/gallary/rhinoplasty/1.jpeg",
+    ],
   },
   {
     id: 1,
@@ -14,6 +22,37 @@ const servicesData = [
       "Tonsillectomy is a common surgical procedure that involves the removal of the tonsils, which are located at the back of the throat. This surgery is often recommended for individuals suffering from chronic tonsillitis, recurrent throat infections, or breathing problems such as sleep apnea. By removing the tonsils, patients can experience relief from frequent sore throats, improved sleep quality, and reduced infections. The procedure is typically performed under general anesthesia, and recovery involves a few days of rest, with symptoms like sore throat gradually subsiding.",
     image: "assets/img/iconic-box/Tonsillectomy.png",
     slug: "tonsillectomy",
+    gallery: [
+      "assets/img/gallary/tonsillectomy/3.jpeg",
+      "assets/img/gallary/tonsillectomy/2.jpeg",
+      "assets/img/gallary/tonsillectomy/1.jpeg",
+    ],
+  },
+  {
+    id: 12,
+    title: "Thyroidectomy",
+    description:
+      "Thyroidectomy is the surgical removal of all or part of the thyroid gland, a butterfly-shaped gland located in the neck. This surgery is often performed to treat conditions like thyroid cancer, goiter, or hyperthyroidism (overactive thyroid). Depending on the reason for surgery, either a portion (partial thyroidectomy) or the entire gland (total thyroidectomy) may be removed. Patients who undergo thyroidectomy may need to take thyroid hormone replacement medication for life if the entire gland is removed. Recovery from thyroidectomy typically involves a brief hospital stay, followed by a few weeks of rest.",
+    image: "assets/img/iconic-box/Thyroidectomy.png",
+    slug: "thyroidectomy",
+    gallery: [
+      "assets/img/gallary/thyroidectomy/1.jpeg",
+      "assets/img/gallary/thyroidectomy/2.jpeg",
+      "assets/img/gallary/thyroidectomy/3.jpeg",
+      "assets/img/gallary/thyroidectomy/4.jpeg",
+    ],
+  },
+  {
+    id: 3,
+    title: "Myringotomy - Grommets Insertion",
+    description:
+      "This procedure is often performed in children with chronic ear infections or fluid build-up behind the eardrums. During the surgery, small incisions are made in both eardrums (myringotomy) and grommets (small tubes) are inserted to facilitate fluid drainage and prevent future fluid accumulation. The tubes usually fall out on their own after several months as the ear heals. Patients benefit from improved hearing and fewer ear infections.",
+    image: "assets/img/iconic-box/Bilateral Myringotomy.png",
+    slug: "myringotomy-grommets-insertion",
+    gallery: [
+      "assets/img/gallary/myringotomy/1.webp",
+      "assets/img/gallary/myringotomy/2.webp",
+    ],
   },
   {
     id: 2,
@@ -79,14 +118,7 @@ const servicesData = [
     image: "assets/img/iconic-box/Submandibular Gland Excision.png",
     slug: "submandibular-gland-excision",
   },
-  {
-    id: 12,
-    title: "Thyroidectomy",
-    description:
-      "Thyroidectomy is the surgical removal of all or part of the thyroid gland, a butterfly-shaped gland located in the neck. This surgery is often performed to treat conditions like thyroid cancer, goiter, or hyperthyroidism (overactive thyroid). Depending on the reason for surgery, either a portion (partial thyroidectomy) or the entire gland (total thyroidectomy) may be removed. Patients who undergo thyroidectomy may need to take thyroid hormone replacement medication for life if the entire gland is removed. Recovery from thyroidectomy typically involves a brief hospital stay, followed by a few weeks of rest.",
-    image: "assets/img/iconic-box/Thyroidectomy.png",
-    slug: "thyroidectomy",
-  },
+
   {
     id: 15,
     title: "Parotidectomy",
@@ -135,14 +167,56 @@ const servicesData = [
     image: "assets/img/iconic-box/Laryngectomy.png",
     slug: "laryngectomy",
   },
+
   {
-    id: 21,
-    title: "CSF Leak Repair",
+    id: 23,
+    title: "Parapharyngeal Tumor",
     description:
-      "CSF (cerebrospinal fluid) leak repair is performed to stop the leakage of spinal fluid, which can occur due to trauma, surgical complications, or underlying health conditions. The repair can be done surgically or through less invasive techniques such as endoscopic procedures. CSF leaks are serious because they can lead to infections like meningitis. Post-operative care involves careful monitoring of neurological signs and sometimes a hospital stay for observation.",
-    image: "assets/img/iconic-box/CSF Leak Repair.png",
-    slug: "csf-leak-repair",
+      "Parapharyngeal tumor surgery involves removing tumors located in the parapharyngeal space, a deep area of the neck near the throat. These tumors can be benign or malignant and often require careful surgical planning due to the complex anatomy of the area. The surgery aims to completely remove the tumor while preserving nearby structures, such as nerves and blood vessels.",
+    image: "assets/img/iconic-box/parapharyngeal-tumor.png",
+    slug: "parapharyngeal-tumor",
   },
+  {
+    id: 24,
+    title: "Ranula Excision",
+    description:
+      "Ranula excision is the surgical removal of a ranula, a fluid-filled cyst that typically develops under the tongue due to blockage of the salivary glands. The procedure involves removing the cyst and, in some cases, the affected salivary gland to prevent recurrence.",
+    image: "assets/img/iconic-box/ranula-excision.png",
+    slug: "ranula-excision",
+  },
+  {
+    id: 25,
+    title: "Branchial Cyst",
+    description:
+      "Surgical removal of a branchial cyst, a congenital abnormality that appears as a lump on the side of the neck. Treatment is recommended to prevent infection or discomfort.",
+    image: "assets/img/iconic-box/branchial-cyst.png",
+    slug: "branchial-cyst",
+  },
+  {
+    id: 26,
+    title: "Foreign Body EAR",
+    description:
+      "Removal of foreign objects that may get lodged in the ear canal. This procedure is performed under local anesthesia to relieve discomfort and avoid potential ear damage.",
+    image: "assets/img/iconic-box/foreign-body-ear.png",
+    slug: "foreign-body-ear",
+  },
+  {
+    id: 27,
+    title: "Foreign Body NOSE",
+    description:
+      "Removal of foreign objects lodged in the nasal passages, which could cause breathing difficulties, infections, or discomfort.",
+    image: "assets/img/iconic-box/foreign-body-nose.png",
+    slug: "foreign-body-nose",
+  },
+  {
+    id: 28,
+    title: "Nasal Polyps",
+    description:
+      "Nasal polyp removal surgery is performed to eliminate soft, non-cancerous growths in the nasal passages or sinuses that cause breathing difficulties and frequent infections.",
+    image: "assets/img/iconic-box/nasal-polyps.png",
+    slug: "nasal-polyps",
+  },
+
   {
     id: 22,
     title: "Pituitary Adenoma Surgery",
@@ -152,12 +226,12 @@ const servicesData = [
     slug: "pituitary-adenoma-surgery",
   },
   {
-    id: 3,
-    title: "Bilateral Myringotomy with Grommets Insertion",
+    id: 21,
+    title: "CSF Leak Repair",
     description:
-      "This procedure is often performed in children with chronic ear infections or fluid build-up behind the eardrums. During the surgery, small incisions are made in both eardrums (myringotomy) and grommets (small tubes) are inserted to facilitate fluid drainage and prevent future fluid accumulation. The tubes usually fall out on their own after several months as the ear heals. Patients benefit from improved hearing and fewer ear infections.",
-    image: "assets/img/iconic-box/Bilateral Myringotomy.png",
-    slug: "myringotomy-grommets-insertion",
+      "CSF (cerebrospinal fluid) leak repair is performed to stop the leakage of spinal fluid, which can occur due to trauma, surgical complications, or underlying health conditions. The repair can be done surgically or through less invasive techniques such as endoscopic procedures. CSF leaks are serious because they can lead to infections like meningitis. Post-operative care involves careful monitoring of neurological signs and sometimes a hospital stay for observation.",
+    image: "assets/img/iconic-box/CSF Leak Repair.png",
+    slug: "csf-leak-repair",
   },
   {
     id: 4,

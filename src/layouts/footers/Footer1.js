@@ -134,7 +134,7 @@ const Footer1 = ({ noNewsletters }) => {
                             src="assets/img/instagram/01.jpg"
                             alt="Instagram"
                           />
-                          <Link href="#">
+                          <Link href="/gallery">
                             <a>
                               <i className="fab fa-instagram" />
                             </a>
@@ -145,7 +145,7 @@ const Footer1 = ({ noNewsletters }) => {
                             src="assets/img/instagram/02.jpg"
                             alt="Instagram"
                           />
-                          <Link href="#">
+                          <Link href="/gallery">
                             <a>
                               <i className="fab fa-instagram" />
                             </a>
@@ -156,7 +156,7 @@ const Footer1 = ({ noNewsletters }) => {
                             src="assets/img/instagram/03.jpg"
                             alt="Instagram"
                           />
-                          <Link href="#">
+                          <Link href="/gallery">
                             <a>
                               <i className="fab fa-instagram" />
                             </a>
@@ -167,7 +167,7 @@ const Footer1 = ({ noNewsletters }) => {
                             src="assets/img/instagram/04.jpg"
                             alt="Instagram"
                           />
-                          <Link href="#">
+                          <Link href="/gallery">
                             <a>
                               <i className="fab fa-instagram" />
                             </a>
@@ -178,7 +178,7 @@ const Footer1 = ({ noNewsletters }) => {
                             src="assets/img/instagram/05.jpg"
                             alt="Instagram"
                           />
-                          <Link href="#">
+                          <Link href="/gallery">
                             <a>
                               <i className="fab fa-instagram" />
                             </a>
@@ -189,7 +189,7 @@ const Footer1 = ({ noNewsletters }) => {
                             src="assets/img/instagram/06.jpg"
                             alt="Instagram"
                           />
-                          <Link href="#">
+                          <Link href="/gallery">
                             <a>
                               <i className="fab fa-instagram" />
                             </a>

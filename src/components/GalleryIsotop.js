@@ -39,7 +39,7 @@ const GalleryIsotop = () => {
                 <div className="gallery-caption">
                   <div>
                     <h3 className="title">
-                      <a href="#">{item.title}</a>
+                      {/* <a href="#">{item.title}</a> */}
                     </h3>
                   </div>
                 </div>

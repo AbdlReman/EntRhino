@@ -5,11 +5,19 @@ import PageBanner from "../src/components/PageBanner";
 import Layouts from "../src/layouts/Layouts";
 import AboutUs from "../src/components/AboutUs";
 import WhyUs from "../src/components/WhyUs";
+import { getMetadata } from "./api/getMetadata";
+import Head from "next/head";
 
 const About = () => {
   const [toggle, setToggle] = useState(1);
+  const page = "about"; // Set the page name here
+  const { title, description } = getMetadata(page);
   return (
     <Layouts footer={2}>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Head>
       <PageBanner title={"About"} />
       <AboutUs />
       {/* <!--====== About Section End ======--> */}

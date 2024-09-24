@@ -2,10 +2,18 @@ import React from "react";
 import PageBanner from "../src/components/PageBanner";
 import Layouts from "../src/layouts/Layouts";
 import ContactForm from "../src/components/ContactForm";
+import { getMetadata } from "./api/getMetadata";
+import Head from "next/head";
 
 const Contact = () => {
+  const page = "contact"; // Set the page name here
+  const { title, description } = getMetadata(page);
   return (
     <Layouts footer={2}>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Head>
       <PageBanner title={"Contact Us"} />
       {/*====== Page Title End ======*/}
       {/*====== Contact Info Section Start ======*/}
@@ -31,16 +39,18 @@ const Contact = () => {
                     <ul>
                       <li>
                         <span>Phone Number</span>
-                        <a href="tel:+012020200">+012 (345) 6789</a>
+                        <a href="tel:+012020200">0300 584 3974</a>
                       </li>
                       <li>
                         <span>Email Address</span>
-                        <a href="mailto:support@gmail.com">support@gmail.com</a>
+                        <a href="mailto:support@gmail.com">
+                          support@entrhinoplasty.com
+                        </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <span>Hotline</span>
                         <a href="tel:+12345678">12345678</a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                   <div className="single-contact-info">
@@ -78,49 +88,49 @@ const Contact = () => {
                       <i className="far fa-angle-right" />
                       Monday
                     </span>
-                    <span>9:00-19:00</span>
+                    <span>4:00-7:00 pm</span>
                   </li>
                   <li>
                     <span>
                       <i className="far fa-angle-right" />
                       Tuesday
                     </span>
-                    <span>9:00-19:00</span>
+                    <span>4:00-7:00 pm</span>
                   </li>
                   <li>
                     <span>
                       <i className="far fa-angle-right" />
                       Wednesday
                     </span>
-                    <span>9:00-19:00</span>
+                    <span>4:00-7:00 pm</span>
                   </li>
                   <li>
                     <span>
                       <i className="far fa-angle-right" />
                       Thursday
                     </span>
-                    <span>9:00-19:00</span>
+                    <span>4:00-7:00 pm</span>
                   </li>
                   <li>
                     <span>
                       <i className="far fa-angle-right" />
                       Friday
                     </span>
-                    <span>9:00-19:00</span>
+                    <span>4:00-7:00 pm</span>
                   </li>
                   <li>
                     <span>
                       <i className="far fa-angle-right" />
                       Saturday
                     </span>
-                    <span>9:00-19:00</span>
+                    <span>4:00-7:00 pm</span>
                   </li>
                   <li>
                     <span>
                       <i className="far fa-angle-right" />
                       Sunday
                     </span>
-                    <span>9:00-19:00</span>
+                    <span>Closed --</span>
                   </li>
                 </ul>
               </div>

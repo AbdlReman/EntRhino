@@ -36,6 +36,21 @@ const ServiceDetails = () => {
                   </div>
                   <h2 className="service-title">{service.title}</h2>
                   <p>{service.description}</p>
+
+                  {service.gallery && service.gallery.length > 0 && (
+                    <div className="gallery">
+                      {/* <h2>Gallery</h2> */}
+                      <div className="gallery-images">
+                        {service.gallery.map((imgUrl, index) => (
+                          <img
+                            key={index}
+                            src={imgUrl}
+                            alt={`${service.title} image ${index + 1}`}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
               <div className="col-lg-4 col-md-10 order-lg-first">

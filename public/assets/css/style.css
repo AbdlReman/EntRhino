@@ -6437,6 +6437,7 @@ button {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(14, 14, 14, 0.1);
 }
 
 .gallery-item-two .gallery-thumbnail::before {
@@ -6454,11 +6455,13 @@ button {
 	transition: 0.3s;
 	opacity: 0;
 	visibility: visible;
+
 	
 }
 
 .gallery-item-two .gallery-thumbnail img {
 	width: 100%;
+	
 }
 
 .gallery-item-two .gallery-caption {
@@ -10506,3 +10509,41 @@ button {
           background-color: #992123;
           color: #fff;
         }
+	
+
+
+		.service-details {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		  }
+		  
+		  .gallery {
+			margin-top: 20px;
+		  }
+		  
+		  .gallery-images {
+			display: flex;
+			gap: 10px;
+			flex-wrap: wrap;
+		  }
+		  
+		  .gallery-images img {
+			width: 200px;
+			height: 150px;
+			object-fit: cover;
+			border-radius: 8px;
+			transition: transform 0.3s ease; /* Add hover effect if needed */
+			
+			box-shadow: 0 4px 8px rgba(14, 14, 14, 0.1); /* Add shadow */
+		  }
+		  
+		  /* Mobile responsive styles */
+		  @media (max-width: 768px) {
+			.gallery-images img {
+			  width: 100%;
+			  height: auto; /* Maintain aspect ratio */
+			  margin-bottom: 10px;
+			}
+		  }
+		  

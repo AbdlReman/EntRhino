@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     <Fragment>
       {loader && <PreLoader />}
       <Head>
-        <title>ENT And Rhinoplasty Hub</title>
+        <title>ENT. And Rhinoplasty Hub</title>
         <link
           rel="shortcut icon"
           href="assets/img/favicon.ico"
