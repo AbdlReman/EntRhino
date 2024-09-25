@@ -60,10 +60,10 @@ const Footer1 = ({ noNewsletters }) => {
                   <p>we are committed to providing exceptional care.</p>
                   <ul className="contact-list">
                     <li>
-                      <Link href="https://goo.gl/maps/inpkL6wUZqMR3opX7">
+                      <Link href="https://maps.app.goo.gl/qPAh9NDiMWBTAdmW7">
                         <a>
                           <i className="far fa-map-marker-alt" />
-                          ENT & Rhinoplasty Hub, Saidpur Road
+                          B-1322 B Block 4th B Road Satellite Town
                         </a>
                       </Link>
                     </li>

@@ -11,12 +11,24 @@ import Head from "next/head";
 const About = () => {
   const [toggle, setToggle] = useState(1);
   const page = "about"; // Set the page name here
-  const { title, description } = getMetadata(page);
+  const { title, description, keywords } = getMetadata(page);
   return (
     <Layouts footer={2}>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="entrhinoplasty.com/about" />
+        <meta
+          property="og:image"
+          content="assets/img/ENT. & Rhinoplasty Hub.jpeg"
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="ENT & Rhinoplasty Hub" />
       </Head>
       <PageBanner title={"About"} />
       <AboutUs />

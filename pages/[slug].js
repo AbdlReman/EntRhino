@@ -28,6 +28,17 @@ const ServiceDetails = () => {
       <Head>
         <title>{service.title}</title>
         <meta name="description" content={service.description} />
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content={service.title} />
+        <meta property="og:description" content={service.description} />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`entrhinoplasty.com/${service.slug}`}
+        />
+        <meta property="og:image" content={service.image} />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="ENT & Rhinoplasty Hub" />
       </Head>
       <PageBanner title={service.title} />
       <>
