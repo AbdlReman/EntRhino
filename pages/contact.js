@@ -157,7 +157,7 @@ const Contact = () => {
         <div className="section-gap">
           <div className="contact-map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3321.9132595263363!2d73.065578!3d33.633491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDM4JzAwLjYiTiA3M8KwMDMnNTYuMSJF!5e0!3m2!1sen!2s!4v1727256641499!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13287.655907681034!2d73.0655805!3d33.6334724!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95eec324eb51%3A0x216ef8a0daec63de!2sENT.%20%26%20Rhinoplasty%20Hub%20%7C%20Dr.%20Haitham%20Akaash%20%7C%20ENT%20specialist%20in%20Rawalpindi!5e0!3m2!1sen!2s!4v1727510007639!5m2!1sen!2s"
               loading="lazy"
             ></iframe>
             {/* <iframe

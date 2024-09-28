@@ -18,6 +18,7 @@ const AboutIndex = () => {
                       <img
                         src="assets/img/circle-image-gallery/01.png"
                         alt=""
+                        id="single-image"
                       />
                     </div>
                     <div
@@ -46,8 +47,9 @@ const AboutIndex = () => {
                       data-wow-delay="0.6s"
                     >
                       <img
-                        src="assets/img/circle-image-gallery/1.jpeg"
+                        src="assets/img/circle-image-gallery/02.png"
                         alt=""
+                        id="single-image1"
                       />
                     </div>
                   </div>
@@ -63,7 +65,7 @@ const AboutIndex = () => {
                   </h2>
                   <p>
                     Rhinoplasty Performed by an ENT Specialist & Facial Plastic
-                    Surgeon – Dr. Haitam Akaash
+                    Surgeon – Dr. Haitham Akaash
                   </p>
                 </div>
                 <p>

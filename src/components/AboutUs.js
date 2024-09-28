@@ -64,7 +64,7 @@ const AboutUs = () => {
                   </h2> */}
                   <p>
                     Rhinoplasty Performed by an ENT Specialist & Facial Plastic
-                    Surgeon – Dr. Haitam Akaash
+                    Surgeon – Dr. Haitham Akaash
                   </p>
                 </div>
                 <p>

@@ -278,7 +278,7 @@ const About = () => {
                     <Accordion.Collapse eventKey="collapseOne">
                       <div className="accordion-content">
                         <p>
-                          An ENT specialist or otolaryngologist is a medical
+                          An ENT specialist, or otolaryngologist, is a
                           professional specializing in the diagnosis and
                           treatment of conditions related to the ears, nose, and
                           throat (ENT). These experts are trained to perform
@@ -337,7 +337,7 @@ const About = () => {
                     <Accordion.Collapse eventKey="collapseThree">
                       <div className="accordion-content">
                         <p>
-                          Dr. Haitam Akaash provides detailed post-operative
+                          Dr. Haitham Akaash provides detailed post-operative
                           care instructions and follows up closely with patients
                           to monitor healing, minimize discomfort, and ensure
                           successful outcomes..

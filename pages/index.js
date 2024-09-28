@@ -45,10 +45,10 @@ const Index = () => {
               <div className="col-lg-5 col-md-8">
                 <div className="hero-content">
                   <h1 className="title wow fadeInDown" data-wow-delay="0.3s">
-                    ENT. &amp; Rhinoplasty Hub
+                    ENT. &amp; RhinoPlasty Hub
                   </h1>
                   <p className="wow fadeInLeft" data-wow-delay="0.4s">
-                    Expert care in ENT treatments and advanced rhinoplasty
+                    Expert care in ENT diseases and advanced rhinoplasty
                     procedures to enhance your health and appearance.
                   </p>
                   <Link href="#appointment">

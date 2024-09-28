@@ -2657,6 +2657,14 @@ button {
 .circle-image-gallery .single-img:not(:last-child) {
 	margin-bottom: 30px;
 }
+#single-image{
+	border-radius: 135px;
+    border-top-right-radius: 0;
+}
+#single-image1{
+	border-radius: 135px;
+    border-bottom-left-radius: 0;
+}
 
 .circle-image-gallery .single-img a {
 	display: block;

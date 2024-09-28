@@ -55,6 +55,19 @@ const servicesData = [
     ],
   },
   {
+    id: 16,
+    title: "Neck Dissection",
+    description:
+      "A surgical procedure where lymph nodes and surrounding tissue in the neck are removed to treat or prevent the spread of head and neck cancers. This procedure can be performed to address cancers such as thyroid, oral, or laryngeal cancers. There are different types of neck dissections—radical, modified, and selective—each varying based on the extent of tissue removed. Recovery can involve careful monitoring of wound healing, potential physical therapy, and adjustments to lifestyle to avoid infections.",
+    image: "assets/img/iconic-box/Neck Dissection.png",
+    slug: "neck-dissection",
+    gallery: [
+      "assets/img/gallary/neck-dissection/1.png",
+      "assets/img/gallary/neck-dissection/2.png",
+      "assets/img/gallary/neck-dissection/3.png",
+    ],
+  },
+  {
     id: 2,
     title: "Adenoidectomy",
     description:
@@ -127,14 +140,7 @@ const servicesData = [
     image: "assets/img/iconic-box/Parotidectomy.png",
     slug: "parotidectomy",
   },
-  {
-    id: 16,
-    title: "Neck Dissection",
-    description:
-      "A surgical procedure where lymph nodes and surrounding tissue in the neck are removed to treat or prevent the spread of head and neck cancers. This procedure can be performed to address cancers such as thyroid, oral, or laryngeal cancers. There are different types of neck dissections—radical, modified, and selective—each varying based on the extent of tissue removed. Recovery can involve careful monitoring of wound healing, potential physical therapy, and adjustments to lifestyle to avoid infections.",
-    image: "assets/img/iconic-box/Neck Dissection.png",
-    slug: "neck-dissection",
-  },
+
   {
     id: 17,
     title: "Tympanoplasty",
