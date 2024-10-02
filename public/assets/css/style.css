@@ -10554,4 +10554,14 @@ button {
 			  margin-bottom: 10px;
 			}
 		  }
-		  
+		  .btn {
+			border: none !important; /* Forcefully remove the default border */
+		
+			outline: none !important; /* Remove any focus outline */
+			box-shadow: none !important; /* Remove any box shadow that may appear as a border */
+		  }
+		  .btn.active {
+			background-color: #712225; /* or your desired active color */
+			color: white;
+			
+		  }

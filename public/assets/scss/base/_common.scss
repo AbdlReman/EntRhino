@@ -99,6 +99,7 @@ span {
 
     .bg-#{$color} {
         background-color: var(--#{$color});
+        opacity: 1;
     }
 }
 

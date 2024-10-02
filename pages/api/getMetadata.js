@@ -32,6 +32,14 @@ export const getMetadata = (page) => {
         keywords:
           "ENT gallery, rhinoplasty transformations, Dr. Haitham Akaash, ENT specialist Rawalpindi,ENT treatments, Rawalpindi",
       };
+    case "video":
+      return {
+        title: "Video | ENT & Rhinoplasty Hub",
+        description:
+          "Browse through the successful ENT treatments and rhinoplasty transformations performed by Dr. Haitham Akaash at ENT & Rhinoplasty Hub.",
+        keywords:
+          "ENT Video, rhinoplasty transformations, Dr. Haitham Akaash, ENT specialist Rawalpindi,ENT treatments, Rawalpindi",
+      };
     case "home":
       return {
         title: "ENT & Rhinoplasty Hub | Leading ENT Specialist in Rawalpindi",

@@ -102,6 +102,9 @@ const Header1 = ({ headerTopbar, position }) => {
                   <Link href="/gallery">Our Gallery</Link>
                 </li>
                 <li>
+                  <Link href="/video">Videos</Link>
+                </li>
+                <li>
                   <Link href="/contact">Contact</Link>
                 </li>
 
