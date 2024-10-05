@@ -4,7 +4,7 @@
     Author: WebTend
     Author URI:  https://webtend.net/
     Version: 1.1
-
+gallery-thumbnail:hover
     Note: This is Main Style CSS File.
 -----------------------------------------------------------------------------------
 	CSS INDEX back-to-top
@@ -6288,6 +6288,8 @@ button {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(133, 14, 14, 0.4);
+	border: 2px solid rgba(144, 29, 29, 0.4); 
 }
 
 .gallery-item-one .gallery-thumbnail::before {
@@ -6408,7 +6410,7 @@ button {
 }
 
 .gallery-item-one:hover .gallery-thumbnail::before {
-	opacity: 0.8;
+	opacity: 0.4;
 	visibility: visible;
 }
 

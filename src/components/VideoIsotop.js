@@ -59,19 +59,17 @@ const VideoIsotop = () => {
           {filteredItems.map((item) => (
             <div key={item.title} className="col-lg-4 col-sm-6 single-gallery">
               <div className="gallery-item-two mt-30">
+                {/* Ensure autoPlay is set to false */}
                 <video
                   src={item.videoUrl}
                   controls
                   preload="metadata"
-                  muted={false}
                   autoPlay={false}
+                  muted={false}
                   width="100%"
-                  onCanPlay={(e) => e.target.play()}
                 >
                   Your browser does not support the video tag.
                 </video>
-
-                {/*  */}
               </div>
             </div>
           ))}

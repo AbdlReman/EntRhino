@@ -67,14 +67,17 @@ const GalleryIsotop = () => {
       try {
         const response = await client.getEntries({
           content_type: "gallery", // Replace with your Contentful content type ID
-          select: "fields.title,fields.image,fields.category", // Fetch title, image, and category
+          select: "fields.title,fields.image,fields.category", // Fetch title, images, and category
         });
 
-        const items = response.items.map((item) => ({
-          title: item.fields.title,
-          imageUrl: item.fields.image.fields.file.url,
-          category: item.fields.category || "Uncategorized", // Handle category field
-        }));
+        // Flatten the images from all gallery items for sequential display
+        const items = response.items.flatMap((item) =>
+          item.fields.image.map((img) => ({
+            title: item.fields.title,
+            imageUrl: img.fields.file.url,
+            category: item.fields.category || "Uncategorized",
+          }))
+        );
 
         // Extract unique categories
         const allCategories = [
@@ -114,18 +117,21 @@ const GalleryIsotop = () => {
         </div>
 
         <div className="row gallery-loop gallery-filter-item">
-          {filteredItems.map((item) => (
-            <div key={item.title} className="col-lg-4 col-sm-6 single-gallery">
-              <div className="gallery-item-two mt-30">
+          {filteredItems.map((item, index) => (
+            <div
+              key={index}
+              className="col-lg-4 col-md-6 col-sm-12 single-gallery"
+            >
+              <div className="gallery-item-one mt-30">
                 <div className="gallery-thumbnail">
-                  <img src={item.imageUrl} alt={item.title} />
+                  <img
+                    src={item.imageUrl}
+                    alt={item.title}
+                    className="img-fluid"
+                  />
                 </div>
                 <div className="gallery-caption">
-                  <div>
-                    <h3 className="title">
-                      {/* <a href="#">{item.title}</a> */}
-                    </h3>
-                  </div>
+                  {/* <h3 className="title">{item.title}</h3> */}
                 </div>
               </div>
             </div>
