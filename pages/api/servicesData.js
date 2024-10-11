@@ -1,7 +1,7 @@
 const servicesData = [
   {
     id: 13,
-    title: "Rhinoplasty",
+    title: "Rhinoplasty (Nose reshaping)",
     description:
       "Rhinoplasty is a surgical procedure that reshapes or reconstructs the nose for either cosmetic or medical reasons. It can be performed to enhance facial harmony, improve proportions, or to address functional problems like breathing issues caused by structural abnormalities. The surgery can involve altering the bone, cartilage, or skin of the nose, depending on the patient's goals or needs. Recovery typically takes several weeks, and the results can be life-enhancing, improving both appearance and functionality.",
     image: "assets/img/iconic-box/rhinoplastyure.PNG",
@@ -17,7 +17,7 @@ const servicesData = [
   },
   {
     id: 1,
-    title: "Tonsillectomy",
+    title: "Tonsillectomy (Tonsils removal)",
     description:
       "Tonsillectomy is a common surgical procedure that involves the removal of the tonsils, which are located at the back of the throat. This surgery is often recommended for individuals suffering from chronic tonsillitis, recurrent throat infections, or breathing problems such as sleep apnea. By removing the tonsils, patients can experience relief from frequent sore throats, improved sleep quality, and reduced infections. The procedure is typically performed under general anesthesia, and recovery involves a few days of rest, with symptoms like sore throat gradually subsiding.",
     image: "assets/img/iconic-box/Tonsillectomy.png",
@@ -77,7 +77,7 @@ const servicesData = [
   },
   {
     id: 5,
-    title: "Septoplasty",
+    title: "Septoplasty ( For nasal blockage)",
     description:
       "Septoplasty is a surgical procedure designed to correct a deviated nasal septum, a condition in which the bone and cartilage dividing the nasal cavity are off-center or crooked. This can lead to nasal obstruction, difficulty breathing, and chronic sinus infections. During the procedure, the septum is straightened and repositioned, improving airflow and reducing nasal congestion. Septoplasty is often performed in conjunction with other nasal surgeries, such as rhinoplasty, and recovery usually takes a few weeks with noticeable improvements in breathing and comfort.",
     image: "assets/img/iconic-box/Septoplasty (2).png",
@@ -143,7 +143,7 @@ const servicesData = [
 
   {
     id: 17,
-    title: "Tympanoplasty",
+    title: "Tympanoplasty (Repair of Ear drum)",
     description:
       "A delicate surgical procedure aimed at repairing a perforation in the tympanic membrane (eardrum) or reconstructing the small bones of the middle ear. This surgery is essential in improving hearing and preventing recurrent ear infections by restoring the natural barrier of the ear. Tympanoplasty is usually recommended for patients with chronic ear infections or trauma-induced perforations. The recovery process includes protecting the ear from water and avoiding strenuous activities until healing is complete.",
     image: "assets/img/iconic-box/Tympanoplasty.png",
@@ -250,7 +250,7 @@ const servicesData = [
   },
   {
     id: 12,
-    title: "FESS (Functional Endoscopic Sinus Surgery)",
+    title: "FESS(For Nasal polyps/Fungus))",
     description:
       "FESS is a minimally invasive surgical procedure used to treat chronic sinusitis or other sinus problems that do not respond to medical treatment. The surgeon uses an endoscope to visualize and remove blockages in the sinuses, allowing for better drainage and improved breathing. FESS offers quicker recovery times than traditional open surgeries, and patients typically experience reduced sinus infections and improved quality of life following the procedure.",
     image: "assets/img/iconic-box/FESS.png",

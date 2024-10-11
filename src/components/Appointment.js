@@ -73,19 +73,6 @@ const Appointment = () => {
                   <div className="col-12">
                     <div
                       className="input-field wow fadeInLeft"
-                      data-wow-delay="0.4s"
-                    >
-                      <input
-                        type="email"
-                        name="email"
-                        placeholder="Enter Your Email"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <div
-                      className="input-field wow fadeInLeft"
                       data-wow-delay="0.5s"
                     >
                       <input

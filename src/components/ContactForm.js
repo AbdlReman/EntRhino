@@ -45,16 +45,16 @@ const ContactForm = () => {
                       <input type="text" name="name" id="name" required />
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  {/* <div className="col-md-6">
                     <div className="input-field">
                       <label htmlFor="email">Email Address</label>
                       <input type="email" name="email" id="email" required />
                     </div>
-                  </div>
-                  <div className="col-lg-12">
+                  </div> */}
+                  <div className="col-lg-6">
                     <div className="input-field">
                       <label htmlFor="number">Phone Number</label>
-                      <input type="text" name="number" id="number" required />
+                      <input type="text" name="phone" id="number" required />
                     </div>
                   </div>
                   <div className="col-lg-12">

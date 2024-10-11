@@ -88,44 +88,50 @@ const Footer1 = ({ noNewsletters }) => {
               </div>
               <div className="col-lg-6">
                 <div className="row">
-                  <div className="col-xl-5 col-md-6">
+                  <div className="col-xl-6 col-md-6">
                     <div className="widget nav-widget">
                       <h4 className="widget-title">Popular Services</h4>
                       <ul className="nav-links">
                         <li>
                           <Link href="/rhinoplasty">
-                            <a>Rhinoplasty</a>
+                            <a>Rhinoplasty (Nose reshaping)</a>
                           </Link>
                         </li>
                         <li>
                           <Link href="/tonsillectomy">
-                            <a>Tonsillectomy</a>
+                            <a>Tonsillectomy (Tonsils removal)</a>
                           </Link>
                         </li>
-                        <li>
-                          <Link href="/adenoidectomy">
-                            <a>Adenoidectomy</a>
-                          </Link>
-                        </li>
+
                         <li>
                           <Link href="/septoplasty">
-                            <a>Septoplasty</a>
+                            <a>Septoplasty( For nasal blockage)</a>
                           </Link>
                         </li>
                         <li>
-                          <Link href="/turbinoplasty">
-                            <a>Turbinoplasty</a>
+                          <Link href="/fess">
+                            <a>FESS(For Nasal polyps/Fungus)</a>
                           </Link>
                         </li>
                         <li>
-                          <Link href="/biopsy">
-                            <a>biopsy</a>
+                          <Link href="Stapedotomy">
+                            <a>Stapedotomy</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/mastoidectomy">
+                            <a> Mastoidectomy</a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/tympanoplasty">
+                            <a> Tympanoplasty(Repair of Ear drum)</a>
                           </Link>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div className="col-xl-7 col-md-6">
+                  <div className="col-xl-6 col-md-6">
                     <div className="widget instagram-widget">
                       <h4 className="widget-title">Photo Gallery</h4>
                       <div className="instagram-images">
