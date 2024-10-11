@@ -55,7 +55,7 @@ const Footer1 = ({ noNewsletters }) => {
               <div className="col-lg-3 col-md-8">
                 <div className="widget text-widget">
                   <div className="footer-logo">
-                    <img src="assets/img/logo.png" alt="Medibo" />
+                    <img src="assets/img/logofooter.png" alt="Medibo" />
                   </div>
                   <p>we are committed to providing exceptional care.</p>
                   <ul className="contact-list">
@@ -68,7 +68,7 @@ const Footer1 = ({ noNewsletters }) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="mailto:support@gmail.com">
+                      <Link href="mailto:support@entrhinoplasty.com">
                         <a>
                           <i className="far fa-envelope" />
                           support@entrhinoplasty.com
@@ -76,7 +76,7 @@ const Footer1 = ({ noNewsletters }) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="tel:01267899">
+                      <Link href="tel:0300584974">
                         <a>
                           <i className="far fa-phone" />
                           0300 584 3974
